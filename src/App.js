@@ -38,16 +38,16 @@ const Portfolio = () => {
 
   const OTHER_CREDITS = [
     {
-      title: 'Vesper',
+      title: 'Vesper - Run & Gun',
       year: '2025',
       role: 'Stunt Driver',
-      coordinator: 'Run & Gun - Andrew Prest / Rorelee Tio'
+      coordinator: 'Andrew Prest / Rorelee Tio'
     },
     {
-      title: 'DoorWarz',
+      title: 'DoorWarz - Live Stunt Show',
       year: '2022-2025',
       role: 'Stunt Driver',
-      coordinator: 'Live Stunt Show - Gaston Morrison'
+      coordinator: 'Gaston Morrison'
     }
   ];
 
@@ -109,7 +109,7 @@ const Portfolio = () => {
     ],
     bodyMeasurements: [
       { label: 'Height:', value: '5\'11" / 180 cm' },
-      { label: 'Weight:', value: '158 lbs / 69 kg' }
+      { label: 'Weight:', value: '155 lbs / 69 kg' }
     ],
     clothingSizes: [
       { label: 'Dress Size:', value: '8' },
