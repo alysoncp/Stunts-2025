@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Mail, Phone, MapPin, Menu, X, Code, Truck, Car, Palette, Database, User, Ruler, Scale, Ambulance, Shirt, Eye, Weight, LockKeyhole, Heart, PocketKnife, PersonStanding, Cable, IdCard } from 'lucide-react';
+import { Mail, Phone, MapPin, Menu, X, Truck, Car, User, Ruler, Shirt, Eye, Heart, PersonStanding, Cable, IdCard} from 'lucide-react';
+import { FaInstagram } from 'react-icons/fa';
+
 
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,8 +12,6 @@ const Portfolio = () => {
     { id: 'stunt-reel', label: 'Stunt Reel' },
     { id: 'resume', label: 'Resume' },
     { id: 'driving-reel', label: 'Driving Reel' },
-    { id: 'skills', label: 'Skills' },
-    { id: 'measurements', label: 'Measurements' },
     { id: 'contact', label: 'Contact' }
   ];
 
@@ -239,9 +239,20 @@ const Portfolio = () => {
       <nav className="fixed top-0 w-full bg-white border-b border-gray-200 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="text-2xl font-bold text-gray-800">
-              Alyson Pickett
+            <div className="flex items-center">
+              <div className="text-2xl font-bold text-gray-800">
+                Alyson Pickett
+              </div>
+              <a
+                href="https://www.instagram.com/alysonpickett"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-pink-600 ml-4"
+              >
+                <FaInstagram size={20} />
+              </a>
             </div>
+             
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
@@ -297,19 +308,30 @@ const Portfolio = () => {
       </section>
 
       {/* Resume Section */}
-      <section id="resume" className="py-20 bg-white">
+      <section id="resume" className="py-10 bg-white">
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-2">
-              Resume & Credits
+              Resume
             </h2>
-            <div className="flex justify-center space-x-4 mb-12">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition-colors">
+            <div className="flex justify-center space-x-4 pt-2 mb-12">
+              <button
+                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition-colors"
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/stuntresume.pdf'; 
+                  link.download = 'stuntresume.pdf';   // Optional: specify the download filename
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+              >
                 Download Full Resume
               </button>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 gap-12 mb-12">
               {/* Film Credits */}
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
@@ -345,24 +367,10 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-      </section>
+      
 
-      {/* Driving Reel Section */}
-      <section id="driving-reel" className="pt-8 pb-8 bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col justify-center">
-        <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-            Driving Reel
-          </h2>
-          <VideoEmbed 
-            src="https://www.youtube.com/embed/roAHy2J2jMo?si=1RnPF4DpZK-U5rjQ"
-            title="Driving Reel"
-          />
-        </div>
-      </section>
-
-      {/* Skills Section */}
-      <section id="skills" className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Skills Section */}
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
               Skills
@@ -417,11 +425,9 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-      </section>
 
-      {/* Measurements Section */}
-      <section id="measurements" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Measurements Section */}
+        <div className="max-w-7xl pt-8 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
               Measurements
@@ -450,6 +456,19 @@ const Portfolio = () => {
               />
             </div>  
           </div>
+        </div>
+      </section>
+
+      {/* Driving Reel Section */}
+      <section id="driving-reel" className="pt-8 pb-8 bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col justify-center">
+        <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+            Driving Reel
+          </h2>
+          <VideoEmbed 
+            src="https://www.youtube.com/embed/roAHy2J2jMo?si=1RnPF4DpZK-U5rjQ"
+            title="Driving Reel"
+          />
         </div>
       </section>
 
