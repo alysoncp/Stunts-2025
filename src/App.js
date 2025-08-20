@@ -352,13 +352,17 @@ const Portfolio = () => {
               Resume
             </h2>
             <div className="flex justify-center space-x-4 pt-2 mb-12">
-              <a
-                href="/resume.pdf"
-                download="Alyson_Pickett_Resume.pdf"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition-colors inline-block"
-              >
-                Download Full Resume
-              </a>
+              <button 
+                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition-colors" 
+                onClick={() => { 
+                  const link = document.createElement('a'); 
+                  link.href = process.env.PUBLIC_URL + '/resume.pdf'; 
+                  link.download = 'Alyson_Pickett_Resume.pdf'; 
+                  document.body.appendChild(link); 
+                  link.click(); 
+                  document.body.removeChild(link); }} > 
+                    Download Full Resume 
+              </button>
             </div>
             
             <div className="grid md:grid-cols-2 gap-12 mb-12">
