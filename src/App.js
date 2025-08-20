@@ -10,12 +10,19 @@ const Portfolio = () => {
   // Constants moved to top for better organization
   const SECTIONS = [
     { id: 'stunt-reel', label: 'Stunt Reel' },
+    { id: 'contact', label: 'Contact' },
     { id: 'resume', label: 'Resume' },
     { id: 'driving-reel', label: 'Driving Reel' },
-    { id: 'contact', label: 'Contact' }
+    { id: 'photos', label: 'Photos' }
   ];
 
   const FILM_CREDITS = [
+    {
+      title: 'Backrooms',
+      year: '2025',
+      role: '"Mary" Stunt Double',
+      coordinator: 'Trevor Addie'
+    },
     {
       title: 'Casket Girls',
       year: '2024',
@@ -115,7 +122,7 @@ const Portfolio = () => {
       { label: 'Dress Size:', value: '8' },
       { label: 'Pants:', value: '32W/34L' },
       { label: 'Shoe:', value: '10.5 US Wmn\'s' },
-      { label: 'Hat:', value: '7 1/4' }
+      { label: 'Hat:', value: '7 3/8' }
     ],
     features: [
       { label: 'Hair Color:', value: 'Brown' },
@@ -301,9 +308,38 @@ const Portfolio = () => {
       <section id="stunt-reel" className="pt-20 pb-5 bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col justify-center">
         <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <VideoEmbed 
-            src="https://www.youtube.com/embed/fZm-ftRwSL8?si=d7HbcVGYwtBn8OU0"
+            src="https://www.youtube.com/embed/AqSD0Cly-7M?si=3kE3oPP0IgyyzwnT" 
             title="Stunt Reel"
           />
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+              Get In Touch
+            </h2>
+            <div className="mx-auto text-center" style={{ width: '80%' }}>
+              <div>
+                <div className="space-y-4">
+                  <div className="flex items-center justify-center">
+                    <Mail size={20} className="text-blue-600 mr-4" />
+                    <span className="text-gray-700">alyson.c.pickett@gmail.com</span>
+                  </div>
+                  <div className="flex items-center justify-center">
+                    <Phone size={20} className="text-blue-600 mr-4" />
+                    <span className="text-gray-700">+1 (780) 318-1762</span>
+                  </div>
+                  <div className="flex items-center justify-center">
+                    <MapPin size={20} className="text-blue-600 mr-4" />
+                    <span className="text-gray-700">Vancouver, BC</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -459,6 +495,7 @@ const Portfolio = () => {
         </div>
       </section>
 
+
       {/* Driving Reel Section */}
       <section id="driving-reel" className="pt-8 pb-8 bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col justify-center">
         <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -466,45 +503,65 @@ const Portfolio = () => {
             Driving Reel
           </h2>
           <VideoEmbed 
-            src="https://www.youtube.com/embed/roAHy2J2jMo?si=1RnPF4DpZK-U5rjQ"
+            src="https://www.youtube.com/embed/a2Fm8b5MQ_4?si=Rb3qEbpl0yEKNqYv"
             title="Driving Reel"
           />
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gray-50">
+      {/* Photos Section */}
+      <section id="photos" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-              Get In Touch
-            </h2>
-            <div className="mx-auto text-center" style={{ width: '80%' }}>
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Let's Work Together</h3>
-                <p className="text-lg text-gray-600 mb-8">
-                  I'm always interested in new opportunities and exciting projects. 
-                  Whether you have a question or just want to say hi, feel free to reach out!
-                </p>
-                <div className="space-y-4">
-                  <div className="flex items-center justify-center">
-                    <Mail size={20} className="text-blue-600 mr-4" />
-                    <span className="text-gray-700">alyson.c.pickett@gmail.com</span>
-                  </div>
-                  <div className="flex items-center justify-center">
-                    <Phone size={20} className="text-blue-600 mr-4" />
-                    <span className="text-gray-700">+1 (780) 318-1762</span>
-                  </div>
-                  <div className="flex items-center justify-center">
-                    <MapPin size={20} className="text-blue-600 mr-4" />
-                    <span className="text-gray-700">Vancouver, BC</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+            Photos
+          </h2>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {/* Example images — replace with your actual files/links */}
+            <img 
+              src="/photos/alt_headshot.jpg" 
+              alt="Stunt photo 1" 
+              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            />
+            <img 
+              src="/photos/soldier.jpg" 
+              alt="Stunt photo 4" 
+              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            />
+            <img 
+              src="/photos/semitruck.jpg" 
+              alt="Stunt photo 3" 
+              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            />
+            <img 
+              src="/photos/cop.jpg" 
+              alt="Stunt photo 4" 
+              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            />
+            <img 
+              src="/photos/lovemeornot.jpg" 
+              alt="Stunt photo 4" 
+              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            />
+            <img 
+              src="/photos/porche.jpg" 
+              alt="Stunt photo 4" 
+              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            />
+            <img 
+              src="/photos/g35_wallride.jpg" 
+              alt="Stunt photo 2" 
+              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            />
+            <img 
+              src="/photos/motherland.jpg" 
+              alt="Stunt photo 4" 
+              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            />
           </div>
         </div>
       </section>
+
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8">
