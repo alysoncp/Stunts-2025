@@ -356,8 +356,8 @@ const Portfolio = () => {
                 className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition-colors"
                 onClick={() => {
                   const link = document.createElement('a');
-                  link.href = '/stuntresume.pdf'; 
-                  link.download = 'stuntresume.pdf';   // Optional: specify the download filename
+                  link.href = process.env.PUBLIC_URL + '/stuntresume.pdf'; 
+                  link.download = 'Alyson_Pickett_Resume.pdf';
                   document.body.appendChild(link);
                   link.click();
                   document.body.removeChild(link);
