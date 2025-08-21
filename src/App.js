@@ -352,14 +352,14 @@ const Portfolio = () => {
               Resume
             </h2>
             <div className="flex justify-center space-x-4 pt-2 mb-12">
-              <a
+              {/* <a
                 href="/resume.pdf"
                 //target="_blank" could be a problem
                 rel="noopener noreferrer"
                 className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition-colors inline-block"
               >
                 View Resume
-              </a>
+              </a> */}
             </div>
             
             <div className="grid md:grid-cols-2 gap-12 mb-12">
