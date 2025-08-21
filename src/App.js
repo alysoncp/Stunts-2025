@@ -356,9 +356,9 @@ const Portfolio = () => {
                 href="/resume.pdf"
                 target="_blank" could be a problem
                 rel="noopener noreferrer"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition-colors inline-block"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition-colors inline-block text-lg"
               >
-                View Resume
+                View PDF Resume
               </a>
             </div>
             
