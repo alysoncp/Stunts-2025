@@ -354,7 +354,7 @@ const Portfolio = () => {
             <div className="flex justify-center space-x-4 pt-2 mb-12">
               <a
                 href="/resume.pdf"
-                target="_blank"
+                target="_blank" //could be a problemgti
                 rel="noopener noreferrer"
                 className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition-colors inline-block"
               >
