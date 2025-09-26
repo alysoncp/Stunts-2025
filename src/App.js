@@ -18,6 +18,18 @@ const Portfolio = () => {
 
   const FILM_CREDITS = [
     {
+      title: 'Wildcards',
+      year: '2025',
+      role: 'Stunt Driver',
+      coordinator: 'Irma Leong / Garvin Cross'
+    },
+    {
+      title: 'Fire Country',
+      year: '2025',
+      role: 'Stunt Driver',
+      coordinator: 'Lloyd Adams / James Micalopoulos'
+    },
+    {
       title: 'Backrooms',
       year: '2025',
       role: '"Mary" Stunt Double',
@@ -59,6 +71,7 @@ const Portfolio = () => {
   ];
 
   const ULB_CREDITS = [
+    { title: 'Blue Box', year: '2025', role: 'Stunt Driver', coordinator: 'Bruce Fontaine' },
     { title: 'Flat Out', year: '2024', role: 'Stunt Driver', coordinator: 'Jovan' },
     { title: 'Love Me Or Not', year: '2024', role: 'Stunt Driver', coordinator: 'Cassandra Ebner' },
     { title: 'Safe Distance', year: '2024', role: 'Stunt Driver', coordinator: 'Jessica Firman' },
