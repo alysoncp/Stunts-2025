@@ -18,6 +18,7 @@ const Portfolio = () => {
 
   const FILM_CREDITS = [
     {
+<<<<<<< HEAD
       title: 'Tracker',
       year: '2026',
       role: '"Molly" Stunt Double',
@@ -30,6 +31,8 @@ const Portfolio = () => {
       coordinator: 'Lloyd Adams / James Micalopoulos'
     },
     {
+=======
+>>>>>>> 90f80635815a4b527e70444a7f84fa29468252e3
       title: 'Wildcards',
       year: '2025',
       role: 'Stunt Driver',
@@ -38,7 +41,11 @@ const Portfolio = () => {
     {
       title: 'Fire Country',
       year: '2025',
+<<<<<<< HEAD
       role: 'Stunt Engine Driver',
+=======
+      role: 'Stunt Driver',
+>>>>>>> 90f80635815a4b527e70444a7f84fa29468252e3
       coordinator: 'Lloyd Adams / James Micalopoulos'
     },
     {
