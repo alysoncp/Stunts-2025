@@ -18,6 +18,24 @@ const Portfolio = () => {
 
   const FILM_CREDITS = [
     {
+      title: 'Virgin River',
+      year: '2026',
+      role: '"Mel" Driving Double',
+      coordinator: 'Rob "Sluggo" Boyce'
+    },
+    {
+      title: 'Tracker',
+      year: '2026',
+      role: '"Molly" Stunt Double',
+      coordinator: 'Rob Hayter'
+    },
+    {
+      title: 'Fire Country',
+      year: '2026',
+      role: 'Stunt Engine Driver',
+      coordinator: 'Lloyd Adams / James Micalopoulos'
+    },
+    {
       title: 'Wildcards',
       year: '2025',
       role: 'Stunt Driver',
