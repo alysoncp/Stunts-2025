@@ -18,6 +18,12 @@ const Portfolio = () => {
 
   const FILM_CREDITS = [
     {
+      title: 'Fire Country - S5',
+      year: '2026',
+      role: 'Stunt Engine Driver #2',
+      coordinator: 'Lloyd Adams / James Micalopoulos'
+    },
+    {
       title: 'Virgin River',
       year: '2026',
       role: '"Mel" Driving Double',
@@ -30,7 +36,7 @@ const Portfolio = () => {
       coordinator: 'Rob Hayter'
     },
     {
-      title: 'Fire Country',
+      title: 'Fire Country S4',
       year: '2026',
       role: 'Stunt Engine Driver',
       coordinator: 'Lloyd Adams / James Micalopoulos'
@@ -42,7 +48,7 @@ const Portfolio = () => {
       coordinator: 'Irma Leong / Garvin Cross'
     },
     {
-      title: 'Fire Country',
+      title: 'Fire Country S4',
       year: '2025',
       role: 'Stunt Driver',
       coordinator: 'Lloyd Adams / James Micalopoulos'
