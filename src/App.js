@@ -345,7 +345,7 @@ const Portfolio = () => {
       <section id="stunt-reel" className="pt-20 pb-5 bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col justify-center">
         <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <VideoEmbed 
-            src="https://www.youtube.com/embed/AqSD0Cly-7M?si=3kE3oPP0IgyyzwnT" 
+            src="https://www.youtube.com/embed/wn7xNUzH3fI?si=2kVJC8i2fYB8A5H0" 
             title="Stunt Reel"
           />
         </div>
