@@ -88,7 +88,7 @@ const Portfolio = () => {
     },
     {
       title: 'DoorWarz - Live Stunt Show',
-      year: '2022-2025',
+      year: '2022-2026',
       role: 'Stunt Driver',
       coordinator: 'Gaston Morrison'
     }
@@ -411,14 +411,6 @@ const Portfolio = () => {
                   ))}
                 </div>
 
-                <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center pt-6">
-                  <span className="mr-2">🎞️</span> Other
-                </h3>
-                <div className="space-y-4">
-                  {OTHER_CREDITS.map((credit, index) => (
-                    <CreditCard key={index} credit={credit} />
-                  ))}
-                </div>
               </div>
 
               {/* ULB Credits */}
@@ -428,6 +420,15 @@ const Portfolio = () => {
                 </h3>
                 <div className="space-y-4">
                   {ULB_CREDITS.map((credit, index) => (
+                    <CreditCard key={index} credit={credit} />
+                  ))}
+                </div>
+
+                <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center pt-6">
+                  <span className="mr-2">{'\uD83C\uDF9E\uFE0F'}</span> Other
+                </h3>
+                <div className="space-y-4">
+                  {OTHER_CREDITS.map((credit, index) => (
                     <CreditCard key={index} credit={credit} />
                   ))}
                 </div>
