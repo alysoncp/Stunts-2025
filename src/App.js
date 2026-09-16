@@ -18,6 +18,12 @@ const Portfolio = () => {
 
   const FILM_CREDITS = [
     {
+      title: 'Allegiance',
+      year: '2026',
+      role: '"Jude" Stunt Driving Double',
+      coordinator: 'Janina Nenadic'
+    },
+    {
       title: 'Fire Country - S5',
       year: '2026',
       role: 'Stunt Engine Driver #2',
@@ -44,7 +50,7 @@ const Portfolio = () => {
     {
       title: 'Wildcards',
       year: '2025',
-      role: 'Stunt Driver',
+      role: '"Yates" Stunt Driving Double',
       coordinator: 'Irma Leong / Garvin Cross'
     },
     {
@@ -72,9 +78,9 @@ const Portfolio = () => {
       coordinator: 'Eli Zagoudakis / Trevor Addie'
     },
     {
-      title: 'Motherland',
+      title: 'Motherland Fort Salem',
       year: '2022',
-      role: 'Stunt Driver',
+      role: 'Stunt Troop Driver #2',
       coordinator: 'Rhys Williams / Sharon Simms'
     }
   ];
@@ -601,7 +607,7 @@ const Portfolio = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-gray-400">
-              © 2025 Alyson Pickett. Built with React and ❤️
+              © 2026 Alyson Pickett. Built with React and ❤️
             </p>
           </div>
         </div>
