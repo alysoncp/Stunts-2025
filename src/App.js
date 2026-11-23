@@ -18,6 +18,12 @@ const Portfolio = () => {
 
   const FILM_CREDITS = [
     {
+      title: 'The Last of Us',
+      year: '2026',
+      role: '"Stunt WLF Soldier',
+      coordinator: 'Larry Lam / Brian Ho'
+    },
+    {
       title: 'Allegiance',
       year: '2026',
       role: '"Jude" Stunt Driving Double',
