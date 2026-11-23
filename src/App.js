@@ -20,7 +20,7 @@ const Portfolio = () => {
     {
       title: 'The Last of Us',
       year: '2026',
-      role: '"Stunt WLF Soldier',
+      role: 'Stunt WLF Soldier',
       coordinator: 'Larry Lam / Brian Ho'
     },
     {
